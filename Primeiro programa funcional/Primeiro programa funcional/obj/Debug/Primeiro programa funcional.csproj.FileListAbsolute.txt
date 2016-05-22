@@ -1,0 +1,12 @@
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro programa funcional\Primeiro programa funcional\bin\Debug\Primeiro programa funcional.exe.config
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro programa funcional\Primeiro programa funcional\bin\Debug\Primeiro programa funcional.exe
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro programa funcional\Primeiro programa funcional\bin\Debug\Primeiro programa funcional.pdb
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro programa funcional.csprojResolveAssemblyReference.cache
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro_programa_funcional.LogSistema.resources
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro_programa_funcional.Properties.Resources.resources
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro programa funcional.csproj.GenerateResource.Cache
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro programa funcional.exe
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro programa funcional.pdb
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro programa funcional\Primeiro programa funcional\bin\Debug\Primeiro programa funcional.exe.config
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro programa funcional.exe
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro programa funcional.pdb

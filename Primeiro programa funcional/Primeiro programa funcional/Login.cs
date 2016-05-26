@@ -12,19 +12,21 @@ namespace Primeiro_programa_funcional
 {
     public partial class LogSistema : Form
     {
+
         public LogSistema()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void Login_Load(object sender, EventArgs e){}
 
         private void VerificarLoginBotao_Click(object sender, EventArgs e)
-        {
-            Cadeado.ImageLocation = "C:\\Users\\Filipe\\Desktop\\ProjetosGit\\Primeiro programa funcional\\Primeiro programa funcional\\img\\Cad_aberto.png";
+        { 
+            MenuPrincipal m = new MenuPrincipal();
+            Util ul = new Util();
+            m.Show();
+            Cadeado.ImageLocation = ul.mp() + "\\Content\\img\\Cad_aberto.png";
+            this.Hide();
         }
     }
 }

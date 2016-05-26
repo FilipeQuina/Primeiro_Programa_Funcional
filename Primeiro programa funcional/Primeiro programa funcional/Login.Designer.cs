@@ -104,7 +104,7 @@
             this.Name = "LogSistema";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Identificação";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Cadeado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

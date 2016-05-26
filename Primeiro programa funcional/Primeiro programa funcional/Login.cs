@@ -24,9 +24,9 @@ namespace Primeiro_programa_funcional
         { 
             MenuPrincipal m = new MenuPrincipal();
             Util ul = new Util();
+            Cadeado.ImageLocation = ul.Mp + "\\Content\\img\\Cad_aberto.png";
             m.Show();
-            Cadeado.ImageLocation = ul.mp() + "\\Content\\img\\Cad_aberto.png";
-            this.Hide();
+           // this.Hide();
         }
     }
 }

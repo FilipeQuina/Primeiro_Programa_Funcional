@@ -40,21 +40,22 @@
             // 
             // LoginTBox
             // 
-            this.LoginTBox.Location = new System.Drawing.Point(70, 12);
+            this.LoginTBox.Location = new System.Drawing.Point(44, 12);
             this.LoginTBox.Name = "LoginTBox";
             this.LoginTBox.Size = new System.Drawing.Size(100, 20);
             this.LoginTBox.TabIndex = 0;
             // 
             // SenhaTBox
             // 
-            this.SenhaTBox.Location = new System.Drawing.Point(70, 38);
+            this.SenhaTBox.Location = new System.Drawing.Point(44, 38);
             this.SenhaTBox.Name = "SenhaTBox";
+            this.SenhaTBox.PasswordChar = '&';
             this.SenhaTBox.Size = new System.Drawing.Size(100, 20);
             this.SenhaTBox.TabIndex = 1;
             // 
             // VerificarLoginBotao
             // 
-            this.VerificarLoginBotao.Location = new System.Drawing.Point(70, 76);
+            this.VerificarLoginBotao.Location = new System.Drawing.Point(44, 76);
             this.VerificarLoginBotao.Name = "VerificarLoginBotao";
             this.VerificarLoginBotao.Size = new System.Drawing.Size(75, 23);
             this.VerificarLoginBotao.TabIndex = 2;
@@ -65,7 +66,7 @@
             // LoginTx
             // 
             this.LoginTx.AutoSize = true;
-            this.LoginTx.Location = new System.Drawing.Point(28, 15);
+            this.LoginTx.Location = new System.Drawing.Point(2, 15);
             this.LoginTx.Name = "LoginTx";
             this.LoginTx.Size = new System.Drawing.Size(36, 13);
             this.LoginTx.TabIndex = 3;
@@ -74,7 +75,7 @@
             // SenhaTx
             // 
             this.SenhaTx.AutoSize = true;
-            this.SenhaTx.Location = new System.Drawing.Point(28, 41);
+            this.SenhaTx.Location = new System.Drawing.Point(2, 41);
             this.SenhaTx.Name = "SenhaTx";
             this.SenhaTx.Size = new System.Drawing.Size(41, 13);
             this.SenhaTx.TabIndex = 4;

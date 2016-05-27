@@ -22,11 +22,23 @@ namespace Primeiro_programa_funcional
 
         private void VerificarLoginBotao_Click(object sender, EventArgs e)
         { 
+            //*Instanciações*//
             MenuPrincipal m = new MenuPrincipal();
             Util ul = new Util();
-            Cadeado.ImageLocation = ul.Mp + "\\Content\\img\\Cad_aberto.png";
-            m.Show();
-           // this.Hide();
+            Usuarios us = new Usuarios();
+            //*Instanciações*//
+
+            string l = LoginTBox.Text;
+            string s = SenhaTBox.Text;
+            if (us.VerificarLogin(l, s))
+            {
+                m.Show();
+                this.Hide();
+
+            }
+            else {
+                MessageBox.Show("Login ou senha inválidos","Aviso",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

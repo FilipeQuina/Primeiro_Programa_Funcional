@@ -8,7 +8,21 @@ namespace Primeiro_programa_funcional
 {
     public class Util
     {
-            string mp = Environment.CurrentDirectory;
+        string bd_conexao= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Filipe\Documents\ppf_bd.mdf;Integrated Security = True; Connect Timeout = 30";
+        string mp = Environment.CurrentDirectory;
+
+        public string Bd_conexao
+        {
+            get
+            {
+                return bd_conexao;
+            }
+
+            set
+            {
+                bd_conexao = value;
+            }
+        }
 
         public  string Mp
         {
@@ -22,5 +36,7 @@ namespace Primeiro_programa_funcional
                 mp = value;
             }
         }
+
+
     }
 }

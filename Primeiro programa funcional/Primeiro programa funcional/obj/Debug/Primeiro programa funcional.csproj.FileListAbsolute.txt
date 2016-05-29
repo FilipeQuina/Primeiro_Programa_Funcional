@@ -17,3 +17,5 @@ C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro program
 C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro_programa_funcional.Properties.Resources.resources
 C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro programa funcional.csproj.GenerateResource.Cache
 C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro programa funcional\Primeiro programa funcional\obj\Debug\Primeiro_programa_funcional.MenuPrincipal.resources
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro programa funcional\Primeiro programa funcional\bin\Debug\ppf_bd.mdf
+C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro programa funcional\Primeiro programa funcional\bin\Debug\ppf_bd_log.ldf

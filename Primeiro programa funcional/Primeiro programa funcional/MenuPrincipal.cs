@@ -19,7 +19,29 @@ namespace Primeiro_programa_funcional
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
-
+            carregarListView();
         }
+
+            private void carregarListView()
+            {
+                OrdemServico os = new OrdemServico();
+                List<OrdemServico.OrdemDeServico> lst = new List<OrdemServico.OrdemDeServico>();
+                lst = os.VisualizarAbertos();
+                Lst_OS.Items.Clear();
+                foreach (var itemLista in lst)
+                {
+                    ListViewItem objListView = new ListViewItem();
+                    objListView.Text = itemLista.codOs;
+                    objListView.SubItems.Add(itemLista.prioridade);
+                    objListView.SubItems.Add((itemLista.dataAbertura).ToString());
+                    objListView.SubItems.Add(itemLista.descricao);
+                    objListView.SubItems.Add(itemLista.manutentor);
+
+                    Lst_OS.Items.Add(objListView);
+
+                }
+            }
+
     }
-}
+    }
+

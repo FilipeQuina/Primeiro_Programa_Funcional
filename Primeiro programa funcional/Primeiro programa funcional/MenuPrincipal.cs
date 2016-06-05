@@ -20,6 +20,21 @@ namespace Primeiro_programa_funcional
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
             carregarListView();
+        
+
+        }
+        private void exibirRegistros()
+        {
+            String prioridade="";
+            String descricao="";
+            String manutentor="";
+
+            prioridade = Lst_OS.SelectedItems[0].SubItems[1].Text;
+            descricao = Lst_OS.SelectedItems[0].SubItems[3].Text;
+            manutentor = Lst_OS.SelectedItems[0].SubItems[4].Text;
+            prioridadeTxt.Text = prioridade;
+            descricaoTxt.Text =descricao;
+            manutentorTxt.Text = manutentor;
         }
 
             private void carregarListView()
@@ -33,7 +48,7 @@ namespace Primeiro_programa_funcional
                     ListViewItem objListView = new ListViewItem();
                     objListView.Text = itemLista.codOs;
                     objListView.SubItems.Add(itemLista.prioridade);
-                    objListView.SubItems.Add((itemLista.dataAbertura).ToString());
+                    objListView.SubItems.Add((itemLista.dataAbertura).ToShortDateString());
                     objListView.SubItems.Add(itemLista.descricao);
                     objListView.SubItems.Add(itemLista.manutentor);
 
@@ -42,6 +57,20 @@ namespace Primeiro_programa_funcional
                 }
             }
 
+        private void Lst_OS_Click(object sender, EventArgs e)
+        {
+            exibirRegistros();
+
+        }
+        private void AlterarBtn_Click(object sender, EventArgs e)
+        {
+            descricaoTxt.ReadOnly = false;
+            manutentorTxt.ReadOnly = false;
+            SalvarBtn.Visible = true;
+
+        }
+
+
     }
-    }
+}
 

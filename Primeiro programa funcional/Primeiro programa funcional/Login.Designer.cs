@@ -28,26 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogSistema));
             this.LoginTBox = new System.Windows.Forms.TextBox();
             this.SenhaTBox = new System.Windows.Forms.TextBox();
             this.VerificarLoginBotao = new System.Windows.Forms.Button();
             this.LoginTx = new System.Windows.Forms.Label();
             this.SenhaTx = new System.Windows.Forms.Label();
-            this.Cadeado = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Cadeado)).BeginInit();
             this.SuspendLayout();
             // 
             // LoginTBox
             // 
-            this.LoginTBox.Location = new System.Drawing.Point(44, 12);
+            this.LoginTBox.Location = new System.Drawing.Point(94, 12);
             this.LoginTBox.Name = "LoginTBox";
             this.LoginTBox.Size = new System.Drawing.Size(100, 20);
             this.LoginTBox.TabIndex = 0;
             // 
             // SenhaTBox
             // 
-            this.SenhaTBox.Location = new System.Drawing.Point(44, 38);
+            this.SenhaTBox.Location = new System.Drawing.Point(94, 38);
             this.SenhaTBox.Name = "SenhaTBox";
             this.SenhaTBox.PasswordChar = '&';
             this.SenhaTBox.Size = new System.Drawing.Size(100, 20);
@@ -55,7 +52,7 @@
             // 
             // VerificarLoginBotao
             // 
-            this.VerificarLoginBotao.Location = new System.Drawing.Point(44, 76);
+            this.VerificarLoginBotao.Location = new System.Drawing.Point(94, 76);
             this.VerificarLoginBotao.Name = "VerificarLoginBotao";
             this.VerificarLoginBotao.Size = new System.Drawing.Size(75, 23);
             this.VerificarLoginBotao.TabIndex = 2;
@@ -66,7 +63,7 @@
             // LoginTx
             // 
             this.LoginTx.AutoSize = true;
-            this.LoginTx.Location = new System.Drawing.Point(2, 15);
+            this.LoginTx.Location = new System.Drawing.Point(52, 15);
             this.LoginTx.Name = "LoginTx";
             this.LoginTx.Size = new System.Drawing.Size(36, 13);
             this.LoginTx.TabIndex = 3;
@@ -75,28 +72,18 @@
             // SenhaTx
             // 
             this.SenhaTx.AutoSize = true;
-            this.SenhaTx.Location = new System.Drawing.Point(2, 41);
+            this.SenhaTx.Location = new System.Drawing.Point(52, 41);
             this.SenhaTx.Name = "SenhaTx";
             this.SenhaTx.Size = new System.Drawing.Size(41, 13);
             this.SenhaTx.TabIndex = 4;
             this.SenhaTx.Text = "Senha:";
             // 
-            // Cadeado
-            // 
-            this.Cadeado.Image = ((System.Drawing.Image)(resources.GetObject("Cadeado.Image")));
-            this.Cadeado.InitialImage = null;
-            this.Cadeado.Location = new System.Drawing.Point(176, 12);
-            this.Cadeado.Name = "Cadeado";
-            this.Cadeado.Size = new System.Drawing.Size(100, 98);
-            this.Cadeado.TabIndex = 5;
-            this.Cadeado.TabStop = false;
-            // 
             // LogSistema
             // 
+            this.AcceptButton = this.VerificarLoginBotao;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 111);
-            this.Controls.Add(this.Cadeado);
             this.Controls.Add(this.SenhaTx);
             this.Controls.Add(this.LoginTx);
             this.Controls.Add(this.VerificarLoginBotao);
@@ -106,7 +93,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Identificação";
             this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Cadeado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,7 +105,6 @@
         private System.Windows.Forms.Button VerificarLoginBotao;
         private System.Windows.Forms.Label LoginTx;
         private System.Windows.Forms.Label SenhaTx;
-        private System.Windows.Forms.PictureBox Cadeado;
     }
 }
 

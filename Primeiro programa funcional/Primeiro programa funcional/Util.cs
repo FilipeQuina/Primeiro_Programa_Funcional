@@ -8,8 +8,7 @@ namespace Primeiro_programa_funcional
 {
     public class Util
     {
-        string bd_conexao= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Filipe\Documents\ppf_bd.mdf;Integrated Security = True; Connect Timeout = 30";
-        
+        string bd_conexao= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Filipe\Desktop\ProjetosGit\Primeiro_Programa_Funcional\Primeiro programa funcional\Primeiro programa funcional\ppf_bd.mdf"";Integrated Security = True";
 
         //*Get e Set*//
         public string Bd_conexao

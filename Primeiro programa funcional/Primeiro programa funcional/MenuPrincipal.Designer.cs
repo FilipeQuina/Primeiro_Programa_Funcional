@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iniciarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordemDeServiçoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.criarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Lst_OS = new System.Windows.Forms.ListView();
             this.Código = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Prioridade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -40,6 +41,7 @@
             this.Descrição = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Manutentor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.editar = new System.Windows.Forms.GroupBox();
+            this.SalvarBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,7 +49,7 @@
             this.prioridadeTxt = new System.Windows.Forms.ComboBox();
             this.manutentorTxt = new System.Windows.Forms.TextBox();
             this.descricaoTxt = new System.Windows.Forms.TextBox();
-            this.SalvarBtn = new System.Windows.Forms.Button();
+            this.AtualizarBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.editar.SuspendLayout();
             this.SuspendLayout();
@@ -79,9 +81,18 @@
             // 
             // ordemDeServiçoToolStripMenuItem
             // 
+            this.ordemDeServiçoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.criarToolStripMenuItem});
             this.ordemDeServiçoToolStripMenuItem.Name = "ordemDeServiçoToolStripMenuItem";
             this.ordemDeServiçoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ordemDeServiçoToolStripMenuItem.Text = "Ordem de serviço";
+            // 
+            // criarToolStripMenuItem
+            // 
+            this.criarToolStripMenuItem.Name = "criarToolStripMenuItem";
+            this.criarToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.criarToolStripMenuItem.Text = "Criar";
+            this.criarToolStripMenuItem.Click += new System.EventHandler(this.criarToolStripMenuItem_Click);
             // 
             // Lst_OS
             // 
@@ -94,7 +105,7 @@
             this.Lst_OS.FullRowSelect = true;
             this.Lst_OS.GridLines = true;
             this.Lst_OS.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem1});
             this.Lst_OS.LabelEdit = true;
             this.Lst_OS.Location = new System.Drawing.Point(12, 27);
             this.Lst_OS.MultiSelect = false;
@@ -147,6 +158,17 @@
             this.editar.TabIndex = 4;
             this.editar.TabStop = false;
             this.editar.Text = "Editar Dados";
+            // 
+            // SalvarBtn
+            // 
+            this.SalvarBtn.Location = new System.Drawing.Point(277, 71);
+            this.SalvarBtn.Name = "SalvarBtn";
+            this.SalvarBtn.Size = new System.Drawing.Size(108, 47);
+            this.SalvarBtn.TabIndex = 8;
+            this.SalvarBtn.Text = "Salvar";
+            this.SalvarBtn.UseVisualStyleBackColor = true;
+            this.SalvarBtn.Visible = false;
+            this.SalvarBtn.Click += new System.EventHandler(this.SalvarBtn_Click);
             // 
             // label3
             // 
@@ -214,15 +236,15 @@
             this.descricaoTxt.Size = new System.Drawing.Size(238, 20);
             this.descricaoTxt.TabIndex = 1;
             // 
-            // SalvarBtn
+            // AtualizarBtn
             // 
-            this.SalvarBtn.Location = new System.Drawing.Point(277, 71);
-            this.SalvarBtn.Name = "SalvarBtn";
-            this.SalvarBtn.Size = new System.Drawing.Size(108, 47);
-            this.SalvarBtn.TabIndex = 8;
-            this.SalvarBtn.Text = "Salvar";
-            this.SalvarBtn.UseVisualStyleBackColor = true;
-            this.SalvarBtn.Visible = false;
+            this.AtualizarBtn.Location = new System.Drawing.Point(649, 165);
+            this.AtualizarBtn.Name = "AtualizarBtn";
+            this.AtualizarBtn.Size = new System.Drawing.Size(95, 46);
+            this.AtualizarBtn.TabIndex = 5;
+            this.AtualizarBtn.Text = "Atualizar";
+            this.AtualizarBtn.UseVisualStyleBackColor = true;
+            this.AtualizarBtn.Click += new System.EventHandler(this.AtualizarBtn_Click);
             // 
             // MenuPrincipal
             // 
@@ -230,6 +252,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1052, 541);
+            this.Controls.Add(this.AtualizarBtn);
             this.Controls.Add(this.editar);
             this.Controls.Add(this.Lst_OS);
             this.Controls.Add(this.menuStrip1);
@@ -268,5 +291,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button AlterarBtn;
         private System.Windows.Forms.Button SalvarBtn;
+        private System.Windows.Forms.ToolStripMenuItem criarToolStripMenuItem;
+        private System.Windows.Forms.Button AtualizarBtn;
     }
 }

@@ -16,7 +16,7 @@ namespace Primeiro_programa_funcional
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LogSistema());
+            Application.Run(new MenuPrincipal());
         }
     }
 }

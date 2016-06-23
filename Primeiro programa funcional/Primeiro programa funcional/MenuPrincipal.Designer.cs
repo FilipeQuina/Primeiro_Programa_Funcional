@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iniciarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +41,8 @@
             this.Descrição = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Manutentor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.editar = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dataFechamentoTxt = new System.Windows.Forms.MaskedTextBox();
             this.SalvarBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +52,7 @@
             this.manutentorTxt = new System.Windows.Forms.TextBox();
             this.descricaoTxt = new System.Windows.Forms.TextBox();
             this.AtualizarBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.editar.SuspendLayout();
             this.SuspendLayout();
@@ -105,7 +108,7 @@
             this.Lst_OS.FullRowSelect = true;
             this.Lst_OS.GridLines = true;
             this.Lst_OS.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem6});
             this.Lst_OS.LabelEdit = true;
             this.Lst_OS.Location = new System.Drawing.Point(12, 27);
             this.Lst_OS.MultiSelect = false;
@@ -144,6 +147,8 @@
             // 
             // editar
             // 
+            this.editar.Controls.Add(this.label4);
+            this.editar.Controls.Add(this.dataFechamentoTxt);
             this.editar.Controls.Add(this.SalvarBtn);
             this.editar.Controls.Add(this.label3);
             this.editar.Controls.Add(this.label2);
@@ -154,10 +159,32 @@
             this.editar.Controls.Add(this.descricaoTxt);
             this.editar.Location = new System.Drawing.Point(649, 27);
             this.editar.Name = "editar";
-            this.editar.Size = new System.Drawing.Size(391, 132);
+            this.editar.Size = new System.Drawing.Size(391, 191);
             this.editar.TabIndex = 4;
             this.editar.TabStop = false;
             this.editar.Text = "Editar Dados";
+            this.editar.Enter += new System.EventHandler(this.editar_Enter);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 115);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Data de Fechamento*";
+            // 
+            // dataFechamentoTxt
+            // 
+            this.dataFechamentoTxt.Location = new System.Drawing.Point(17, 138);
+            this.dataFechamentoTxt.Mask = "00/00/0000";
+            this.dataFechamentoTxt.Name = "dataFechamentoTxt";
+            this.dataFechamentoTxt.ReadOnly = true;
+            this.dataFechamentoTxt.RejectInputOnFirstFailure = true;
+            this.dataFechamentoTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataFechamentoTxt.Size = new System.Drawing.Size(62, 20);
+            this.dataFechamentoTxt.TabIndex = 9;
+            this.dataFechamentoTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SalvarBtn
             // 
@@ -238,7 +265,7 @@
             // 
             // AtualizarBtn
             // 
-            this.AtualizarBtn.Location = new System.Drawing.Point(649, 165);
+            this.AtualizarBtn.Location = new System.Drawing.Point(649, 431);
             this.AtualizarBtn.Name = "AtualizarBtn";
             this.AtualizarBtn.Size = new System.Drawing.Size(95, 46);
             this.AtualizarBtn.TabIndex = 5;
@@ -246,12 +273,22 @@
             this.AtualizarBtn.UseVisualStyleBackColor = true;
             this.AtualizarBtn.Click += new System.EventHandler(this.AtualizarBtn_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(666, 318);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1052, 541);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.AtualizarBtn);
             this.Controls.Add(this.editar);
             this.Controls.Add(this.Lst_OS);
@@ -261,6 +298,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
+            this.Click += new System.EventHandler(this.MenuPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.editar.ResumeLayout(false);
@@ -293,5 +331,8 @@
         private System.Windows.Forms.Button SalvarBtn;
         private System.Windows.Forms.ToolStripMenuItem criarToolStripMenuItem;
         private System.Windows.Forms.Button AtualizarBtn;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MaskedTextBox dataFechamentoTxt;
+        private System.Windows.Forms.Button button1;
     }
 }

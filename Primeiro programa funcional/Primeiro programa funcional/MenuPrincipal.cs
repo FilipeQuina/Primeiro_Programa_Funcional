@@ -17,7 +17,7 @@ namespace Primeiro_programa_funcional
             InitializeComponent();
         }
 
-        private void MenuPrincipal_Load(object sender, EventArgs e)
+        public void MenuPrincipal_Load(object sender, EventArgs e)
         {
             carregarListView();
         }
@@ -38,6 +38,7 @@ namespace Primeiro_programa_funcional
             prioridadeTxt.Text = prioridade;
             descricaoTxt.Text =descricao;
             manutentorTxt.Text = manutentor;
+            Button button = new Button();
         }
         
         public void carregarListView()
@@ -64,34 +65,39 @@ namespace Primeiro_programa_funcional
         {
             exibirRegistros();
         }
-
+      
         private void AlterarBtn_Click(object sender, EventArgs e)
         {
             descricaoTxt.ReadOnly = false;
             manutentorTxt.ReadOnly = false;
             SalvarBtn.Visible = true;
             AlterarBtn.Visible = false;
+            dataFechamentoTxt.ReadOnly = false;
         }
 
         private void SalvarBtn_Click(object sender, EventArgs e)
         {
             try
             {
-                os.AlterarOS(Lst_OS.SelectedItems[0].Text, prioridadeTxt.Text, descricaoTxt.Text, manutentorTxt.Text);
+                
+                os.AlterarOS(Lst_OS.SelectedItems[0].Text, prioridadeTxt.Text, descricaoTxt.Text, manutentorTxt.Text, dataFechamentoTxt.Text);
                 carregarListView();
 
                 descricaoTxt.ReadOnly = true;
                 manutentorTxt.ReadOnly = true;
+                dataFechamentoTxt.ReadOnly = true;
                 SalvarBtn.Visible = false;
                 AlterarBtn.Visible = true;
+                dataFechamentoTxt.Text = "";
             }
             catch (Exception )
             {
                 MessageBox.Show("Selecione uma Ordem de Serviço", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //throw;
             }
    
         }
-
+       
         private void criarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Cos.Show();
@@ -100,6 +106,11 @@ namespace Primeiro_programa_funcional
         private void AtualizarBtn_Click(object sender, EventArgs e)
         {
             carregarListView();
+        }
+
+        private void editar_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
